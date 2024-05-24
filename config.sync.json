@@ -1,0 +1,18 @@
+
+{
+  "sync_interval": "15m",
+  "data_sources": [
+    {
+      "name": "Wise Transactions",
+      "endpoint": "/v1/transactions",
+      "method": "GET",
+      "headers": {
+        "Authorization": "Bearer {access_token}"
+      },
+      "params": {
+        "startDate": "{last_sync_date}",
+        "endDate": "{current_date}"
+      }
+    }
+  ]
+}

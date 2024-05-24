@@ -1,0 +1,29 @@
+
+{
+  "entities": {
+    "Transaction": {
+      "fields": {
+        "id": {
+          "type": "string",
+          "required": true
+        },
+        "amount": {
+          "type": "number",
+          "required": true
+        },
+        "currency": {
+          "type": "string",
+          "required": true
+        },
+        "timestamp": {
+          "type": "datetime",
+          "required": true
+        },
+        "description": {
+          "type": "string",
+          "required": false
+        }
+      }
+    }
+  }
+}
